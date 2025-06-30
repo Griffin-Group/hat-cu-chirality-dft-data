@@ -1,0 +1,7 @@
+Loading vasp/5.4.4
+  Loading requirement: openmpi/4.1.2
+MODULE ERROR DETECTED: GLOBALERR Conflicting openmpi is loaded
+(Detailed error information and backtrace has been suppressed, set $MODULES_ERROR_BACKTRACE to unsuppress.)
+
+Loading openmpi/4.1.7
+  ERROR: Conflicting openmpi is loaded

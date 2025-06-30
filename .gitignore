@@ -1,0 +1,10 @@
+CHGCAR.zip
+PROCAR.gz
+PARCHG_?.gz
+PARCHG_2?.gz
+PARCHG_1_raw.gz
+trajectory_OUTCARs.zip
+__pycache__/
+.DS_Store
+HAT-Cu-AgSlab*/*.dos/vasprun.xml.gz
+HAT-Cu-AgSlab*/*.bands/vasprun.xml.gz

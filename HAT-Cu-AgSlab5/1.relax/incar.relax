@@ -1,0 +1,108 @@
+# VASP INCAR script
+# Structural relaxation
+
+ System = HAT-Cu
+
+# Starting parameters:
+
+ ISTART = 0   
+# read wavecar. 0-no, 1-yes, 2-yes and keep basis set same. Default 0.
+ ICHARG = 2
+# how to do initial charge density: 0-from WAVECAR, 1-from CHGCAR, 2-as superposition of atomic orbitals, +10 non selfconsistent calculation. Default 2 if ISTART=0, 0 otherwise.
+
+# Electronic relaxation:
+
+ PREC = Accurate
+# default Normal
+ ADDGRID = .FALSE.
+# recommended TRUE for accurate forces. Default FALSE
+ SYMPREC = 1E-5
+# precision read from POSCAR. Default 1E-5.
+ ENCUT = 400
+# energy cut. See the ENMAX in POTCAR for default value.
+ EDIFF = 1E-4
+# stopping criteria for electronic SC-loop. Default 1E-4.
+ LREAL = Auto
+# real-space projection. Default FALSE. Recommend Auto for large cells.
+ ALGO = Normal
+# electronic minimisation algorithm. Typical values are Normal, Fast or VeryFast.
+ NELM = 60
+# Maximum number of electronic minimisation steps. Default is 60.
+ NELMIN = 2
+# Minimum number of electronic minimisation steps. Default is 2.
+
+# Writing files:
+
+ LWAVE = .TRUE.
+# write WAVECAR. Default true.
+ LCHARG = .TRUE.
+# write CHG and CHGCAR. Default true.
+# LORBIT = 
+# Determines which DOSCAR and PROCAR/PROOUT files are written and how.
+# Default is none. 11 is DOSCAR and lm-decomposed PROCAR.
+ LAECHG = .FALSE.
+# Writes the PAW 'all-electron charge density', useful for Bader. Default False.
+ LVTOT = .FALSE.
+# Writes the total local potential to LOCPOT. Default False.
+ LVHAR = .FALSE.
+# Includes only the Hartree and ionic potentials in LOCPOT. Default False.
+
+# DOS parameters
+
+ NEDOS = 301
+# Number of energy grid points for evaluating DOS. Default 301
+# EMIN = 
+# EMAX = 
+# Energy bounds for DOS. Defaults to full range of eigenvalues, although setting to be something closer to the region of interest is a good idea. Energy does not correct for Fermi.
+
+# Ionic relaxation:
+ NSW = 20
+# max number of geometry steps. Default 0.
+ IBRION = 2
+# ionic relaxation algo. -1-none, 0-MD, 1-quasi-Newton, 2-CG, 3-Damped MD
+# Generally, 2 is a good relaxation algorithm. 1 is for if you're very close, but if you do that increase NELMIN to 4 or 8.
+ EDIFFG = -0.01
+# Stopping condition. If positive, looks at energy differences. If negative, looks at force on each atom.
+# Default is EDIFF*10, but -0.01 is a better value.
+ ISIF = 2
+# What parts to optimise. 0,1,2 optimise ions only, but differ in how much stress tensor they calculate.
+# pos|shape|vol, 0,1,2=ynn; 3=yyy; 4=yyn; 5=nyn; 6=nyy; 7=nny
+# Default 2 (but 0 for MD).
+
+# van der Waals corrections
+ IVDW = 11
+# Default 0=none. 1 or 10 is DFT-D2.
+
+ LDIPOL = .TRUE.
+ IDIPOL = 3
+
+# Spin
+
+ LSORBIT = .FALSE.
+# Switches on spin-orbit coupling. Requires vasp_ncl instead of vasp_std. Default False.
+ LMAXMIX = 2
+# Default 2. Controls l quantum number in charge mixer and chgcar. Some calculations (such as magnetic anisotropy or +U) recommend using 4 for d elements.
+
+# Smearing
+
+ ISMEAR = 0
+# 1:Methfessel/Paxton, 0:Gaussian, -1:Fermi, -5:Blochl tetrahedron. Default 1.
+# Use -5 for accurate total energies and DOS but NOT forces in metals.
+# ALWAYS use 1 for relaxation in metals.
+# NEVER use 1 for semiconductors and insulators.
+# Recommended use 0 or -5 in insulators.
+# -5 won't work for less than 3 k-points. Use 0 instead.
+ SIGMA = 0.05
+# Default 0.2. Smearing parameter. 0.2 is good for MP. 0.05 is good for Gaussian.
+
+# Parallelization
+
+# NPAR = 4
+# Number of bands per core. Defaults to number of cores, which is good for smallish systems (up to 8 cores).
+# For massively parallel systems, recommended to use sqrt(number of cores).
+# npar overrides ncore.
+ NCORE = 32
+# Number of cores per orbital. Defaults to 1.
+# For massively parallel systems, recommended to use number of cores per node.
+# Small values of ncore lead to higher memory requirements.
+ KPAR = 4

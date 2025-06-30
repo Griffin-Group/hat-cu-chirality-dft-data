@@ -1,0 +1,125 @@
+Calculating PARCHG.1 at date at Fri Jun  6 08:58:51 AEST 2025.
+ running on   48 total cores
+ distrk:  each k-point on   48 cores,    1 groups
+ distr:  one band on   12 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  C  Cu H  N 
+ POSCAR found :  4 types and      51 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  C  Cu H  N 
+ POSCAR found :  4 types and      51 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   126 present:   128
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          127
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:   -0.800  -0.412
+Efermi =   -2.188
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -2.9884  -2.6000
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    2
+  97  98
+k-point no.    2; bands inside the range    2
+  97  98
+k-point no.    3; bands inside the range    2
+  97  98
+k-point no.    4; bands inside the range    2
+  97  98
+k-point no.    5; bands inside the range    2
+  97  98
+k-point no.    6; bands inside the range    2
+  97  98
+k-point no.    7; bands inside the range    2
+  97  98
+k-point no.    8; bands inside the range    2
+  97  98
+k-point no.    9; bands inside the range    2
+  97  98
+k-point no.   10; bands inside the range    2
+  97  98
+k-point no.   11; bands inside the range    2
+  97  98
+k-point no.   12; bands inside the range    2
+  97  98
+k-point no.   13; bands inside the range    2
+  97  98
+k-point no.   14; bands inside the range    2
+  97  98
+k-point no.   15; bands inside the range    2
+  97  98
+k-point no.   16; bands inside the range    2
+  97  98
+k-point no.   17; bands inside the range    2
+  97  98
+k-point no.   18; bands inside the range    2
+  97  98
+k-point no.   19; bands inside the range    2
+  97  98
+k-point no.   20; bands inside the range    2
+  97  98
+k-point no.   21; bands inside the range    2
+  97  98
+k-point no.   22; bands inside the range    2
+  97  98
+k-point no.   23; bands inside the range    2
+  97  98
+k-point no.   24; bands inside the range    2
+  97  98
+k-point no.   25; bands inside the range    2
+  97  98
+k-point no.   26; bands inside the range    2
+  97  98
+k-point no.   27; bands inside the range    2
+  97  98
+k-point no.   28; bands inside the range    2
+  97  98
+k-point no.   29; bands inside the range    2
+  97  98
+k-point no.   30; bands inside the range    2
+  97  98
+k-point no.   31; bands inside the range    2
+  97  98
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Fri Jun  6 08:59:34 AEST 2025.
+updating: OUTCAR (deflated 79%)
+updating: POSCAR (deflated 86%)
+updating: INCAR (deflated 52%)
+updating: KPOINTS (deflated 11%)
+updating: POTCAR.spec (deflated 42%)
+test of Main_1.zip OK
+updating: EIGENVAL (deflated 85%)
+updating: IBZKPT (deflated 92%)
+updating: OUTCAR (deflated 79%)
+test of Data_1.zip OK
+  adding: 142452881.gadi-pbs.SC (deflated 45%)
+Finished execution at Fri Jun  6 08:59:38 AEST 2025.
+
+======================================================================================
+                  Resource Usage on 2025-06-06 08:59:42:
+   Job Id:             142452881.gadi-pbs
+   Project:            re62
+   Exit Status:        0
+   Service Units:      1.31
+   NCPUs Requested:    48                     NCPUs Used: 48              
+                                           CPU Time Used: 00:25:17        
+   Memory Requested:   190.0GB               Memory Used: 19.92GB         
+   Walltime requested: 00:05:00            Walltime Used: 00:00:49        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================

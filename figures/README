@@ -1,0 +1,98 @@
+# Software Requirements
+
+`plot_stm.py` requires Python with pymatgen.
+
+`plot_bands.sh`, `plot_agbands1.sh`, `plot_agbands2.py` requires Python with sumo (which also requires pymatgen).
+
+`plot_dos_compare.gnuplot` only requires gnuplot.
+
+# Band structure plots
+
+`plot_bands.sh` plots the band structures of free (achiral), PW, and Y phases.
+
+`plot_agbands1.sh` plots the band structures of the achiral structure on Ag(111),
+for a 3 and 5 atom slab, with side-by-side DOS.
+It takes an argument, `-d`, to plot the bands with lower-precision data
+packaged with the GitHub/Zenodo repo, to create downsampled `_ds` figures.
+
+`plot_agbands2.py` plots the band structures of the achiral structure on Ag(111),
+but this time with a different colour scheme for the projection that makes the
+Ag bands less prominent while still having commutative colour blending.
+It also takes the `-d` argument to create downsampled `_ds` figures.
+
+While downsampled data is provided for your convenience, the plots in the 
+paper were created with the full-quality raw data, which are available on
+reasonable request from the theory authors (Bernard Field, Sinead Griffin).
+
+# STM plots
+
+Generated with `stm.py`.
+
+STM simulations use the Tersoff-Hamann approximation, obtaining the height of
+the isosurface of the band-projected charge density.
+The implementation used here was adapted from Atomic Simulation Environment
+to use VASP's PARCHG files, and I added a few plotting wrappers.
+
+Because we do not have the exact Fermi level, we integrate over whole band
+manifolds to identify their contributions. The qualitative features don't
+change much within the band; mostly the magnitude changes (see 2a, 2b, 2c).
+
+There are some free parameters in the STM simulation: the current and the
+minimum height of the scan.
+
+Plotting will automatically set the colour range to the full range of height
+values that were sampled. However, if the system has holes, this could include
+values all the way down at z=0.
+In this case, vmin must be set to set a lower threshold on the colour bar.
+Use the function diagnose_stm to find what values of z the scan obtains.
+
+Also, sometimes the default starting height for the scan doesn't work (mainly
+for band #4). In this case, z0 needs to be set.
+
+The current is in units of nano-Ampere, allegedly. It won't map exactly to
+experiment because we don't have the substrate, and the Fermi level is 
+different, but it's a start.
+
+For your convenience, I provide down-sampled PARCHGs which are easy to store on
+GitHub/Zenodo. These produce okay-quality STM plots. However, the real figures
+were created using the original full-quality PARCHGs, which are available on
+reasonable request from the theory authors (Bernard Field, Sinead Griffin).
+
+Isosurfaces in the `PARCHG*.png` are at 0.005 e/A^3, except for band 4 which is at 0.0005 e/A^3.
+
+## Energy ranges integrated over in DFT.
+
+Pinwheel phase
+
+1: -0.8 to -0.4
+2: -0.4 to 0.6
+2a: -0.3 to 0.0
+2b: 0.0 to 0.2
+2c: 0.2 to 0.5
+3: 1.5 to 2.15
+4: 2.15 to 2.5
+
+Y phase
+
+1: -1.1 to -0.5
+2: -0.5 to 0.6
+2a: -0.3 to 0.0
+2b: 0.0 to 0.2
+2c: 0.2 to 0.5
+3: 1.5 to 2.15
+4: 2.15 to 2.5
+
+Flat phase
+
+1: -0.8 -0.4116
+2: -0.4116 0.6
+3: 1.5 2.2384
+4: 2.2384 2.5
+
+# DOS comparison plot
+
+This plot, made with `plot_dos_compare.gnuplot`, compares the projected/partial
+DOS summed over atoms of the HAT molecules for different substrates.
+The data it reads, `DOS.SUM.HAT`, was extracted from the `DOSCAR` with `split_dos`
+and summed with `sum_dos_np` from VTST Tools.
+It has 5 columns: energy, s, p, d, total.

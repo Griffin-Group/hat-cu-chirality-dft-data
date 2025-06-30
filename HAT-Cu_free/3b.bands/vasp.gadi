@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# VASP job script for NCI-Gadi
+
+#PBS -l software=vasp
+#PBS -l other=ccdomain
+#PBS -l wd
+#PBS -P ls90
+
+#PBS -l walltime=2:00:00
+#PBS -l mem=190gb
+#PBS -l ncpus=48
+#PBS -q normal
+
+#PBS -N VASP_Band_HATCu
+#PBS -M bfield@lbl.gov
+#PBS -m bae
+
+# Runs VASP job.
+
+module load vasp/5.4.4
+module load openmpi
+module load python3
+
+export OMP_NUM_THREADS=1
+
+echo "Doing band structure calculation at `date`." | tee -a track
+
+mpirun vasp_std
+if (( $? )); then
+    echo "Error while running VASP. Aborting." | tee -a track
+    exit 1
+fi
+
+echo "Zipping files at `date`." | tee -a track
+
+sed -n 's/^ *TITEL *=//p' POTCAR > POTCAR.spec
+rm CHG REPORT PCDAT XDATCAR CONTCAR
+zip Main.zip OUTCAR
+zip -mT Output.zip DOSCAR EIGENVAL OSZICAR OUTCAR PROCAR
+zip Main.zip POSCAR INCAR KPOINTS
+zip -mT Main.zip POTCAR.spec
+zip --junk-paths Main.zip $0
+gzip vasprun.xml
+
+echo "Finished execution at `date`." | tee -a track
+
+exit 0

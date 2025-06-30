@@ -1,0 +1,565 @@
+Calculating PARCHG.1 at date at Thu May 22 07:18:40 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:   -1.100  -0.500
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -3.5668  -2.9668
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    2; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    3; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    4; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    5; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    6; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    7; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    8; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.    9; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.   10; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.   11; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.   12; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+k-point no.   13; bands inside the range    9
+ 289 290 291 292 293 294 295 296 297
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:20:41 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_1.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_1.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.2 at date at Thu May 22 07:20:56 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:   -0.500   0.600
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -2.9668  -1.8668
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    2; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    3; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    4; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    5; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    6; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    7; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    8; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.    9; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.   10; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.   11; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.   12; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+k-point no.   13; bands inside the range   18
+ 298 299 300 301 302 303 304 305 306 307
+ 308 309 310 311 312 313 314 315
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:22:45 AEST 2025.
+  adding: OUTCAR (deflated 72%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_2.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 72%)
+test of Data_2.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.3 at date at Thu May 22 07:23:01 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:    1.500   2.150
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -0.9668  -0.3168
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    2; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    3; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    4; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    5; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    6; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    7; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    8; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.    9; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.   10; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.   11; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.   12; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+k-point no.   13; bands inside the range   12
+ 316 317 318 319 320 321 322 323 324 325
+ 326 327
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:24:49 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_3.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_3.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.4 at date at Thu May 22 07:25:05 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:    2.150   2.500
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -0.3168   0.0332
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    3
+ 328 329 330
+k-point no.    2; bands inside the range    3
+ 328 329 330
+k-point no.    3; bands inside the range    3
+ 328 329 330
+k-point no.    4; bands inside the range    3
+ 328 329 330
+k-point no.    5; bands inside the range    3
+ 328 329 330
+k-point no.    6; bands inside the range    3
+ 328 329 330
+k-point no.    7; bands inside the range    3
+ 328 329 330
+k-point no.    8; bands inside the range    3
+ 328 329 330
+k-point no.    9; bands inside the range    3
+ 328 329 330
+k-point no.   10; bands inside the range    3
+ 328 329 330
+k-point no.   11; bands inside the range    3
+ 328 329 330
+k-point no.   12; bands inside the range    3
+ 328 329 330
+k-point no.   13; bands inside the range    3
+ 328 329 330
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:26:54 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_4.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_4.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.2a at date at Thu May 22 07:27:08 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:   -0.300   0.000
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -2.7668  -2.4668
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    2; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    3; bands inside the range    4
+ 298 299 300 301
+k-point no.    4; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    5; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    6; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    7; bands inside the range    4
+ 298 299 300 301
+k-point no.    8; bands inside the range    5
+ 298 299 300 301 302
+k-point no.    9; bands inside the range    4
+ 298 299 300 301
+k-point no.   10; bands inside the range    5
+ 298 299 300 301 302
+k-point no.   11; bands inside the range    4
+ 298 299 300 301
+k-point no.   12; bands inside the range    4
+ 298 299 300 301
+k-point no.   13; bands inside the range    4
+ 298 299 300 301
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:29:05 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_2a.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_2a.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.2b at date at Thu May 22 07:29:21 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:    0.000   0.200
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -2.4668  -2.2668
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    4
+ 303 304 305 306
+k-point no.    2; bands inside the range    4
+ 303 304 305 306
+k-point no.    3; bands inside the range    5
+ 302 303 304 305 306
+k-point no.    4; bands inside the range    4
+ 303 304 305 306
+k-point no.    5; bands inside the range    4
+ 303 304 305 306
+k-point no.    6; bands inside the range    4
+ 303 304 305 306
+k-point no.    7; bands inside the range    5
+ 302 303 304 305 306
+k-point no.    8; bands inside the range    4
+ 303 304 305 306
+k-point no.    9; bands inside the range    5
+ 302 303 304 305 306
+k-point no.   10; bands inside the range    4
+ 303 304 305 306
+k-point no.   11; bands inside the range    5
+ 302 303 304 305 306
+k-point no.   12; bands inside the range    5
+ 302 303 304 305 306
+k-point no.   13; bands inside the range    5
+ 302 303 304 305 306
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:31:10 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_2b.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_2b.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Calculating PARCHG.2c at date at Thu May 22 07:31:26 AEST 2025.
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   12 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jan 14 2022 15:04:31) complex          
+  
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  N  C  H  Cu
+ POSCAR found :  4 types and     153 ions
+ found WAVECAR, reading the header
+  number of bands has changed, file:   378 present:   384
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          379
+ the WAVECAR file was read successfully
+Calculating partial charge density.
+Open file   1 INCAR for input.
+NDMOD =  -3
+Energy range vs. Fermi energy from INCAR:    0.200   0.500
+Efermi =   -2.467
+No KPOINTS given: use all of them.
+
+*****************************************************
+* Parameters from pardens
+*****************************************************
+
+NBMOD is set to  -3
+Selected energy range (EINT)   -2.2668  -1.9668
+Selected all k-points to calculate charge density.
+k-point no.    1; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    2; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    3; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    4; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    5; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    6; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    7; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    8; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.    9; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.   10; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.   11; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.   12; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+k-point no.   13; bands inside the range    9
+ 307 308 309 310 311 312 313 314 315
+Finished calculating partial charge density.
+VASP will stop now.
+Zipping files at Thu May 22 07:33:24 AEST 2025.
+  adding: OUTCAR (deflated 71%)
+  adding: POSCAR (deflated 73%)
+  adding: INCAR (deflated 52%)
+  adding: KPOINTS (deflated 6%)
+  adding: POTCAR.spec (deflated 42%)
+test of Main_2c.zip OK
+  adding: EIGENVAL (deflated 86%)
+  adding: IBZKPT (deflated 91%)
+  adding: OUTCAR (deflated 71%)
+test of Data_2c.zip OK
+  adding: 141455118.gadi-pbs.SC (deflated 44%)
+Finished execution at Thu May 22 07:33:40 AEST 2025.
+
+======================================================================================
+                  Resource Usage on 2025-05-22 07:33:44:
+   Job Id:             141455118.gadi-pbs
+   Project:            uc98
+   Exit Status:        0
+   Service Units:      48.16
+   NCPUs Requested:    96                     NCPUs Used: 96              
+                                           CPU Time Used: 20:28:54        
+   Memory Requested:   380.0GB               Memory Used: 45.33GB         
+   Walltime requested: 00:30:00            Walltime Used: 00:15:03        
+   JobFS requested:    200.0MB                JobFS used: 8.16MB          
+======================================================================================

@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# VASP job script for NCI-Gadi
+
+#PBS -l software=vasp
+#PBS -l other=ccdomain
+#PBS -l wd
+#PBS -P uc98
+
+#PBS -l walltime=0:30:00
+#PBS -l mem=380gb
+#PBS -l ncpus=96
+#PBS -q normal
+
+#PBS -N VASP_HATCu_Parchg
+#PBS -M bfield@lbl.gov
+#PBS -m bae
+
+# Runs VASP job.
+
+module load vasp/5.4.4
+module load openmpi
+
+export OMP_NUM_THREADS=1
+
+for i in {1..4}; do
+
+echo "Calculating PARCHG.${i} at date at `date`." | tee -a track
+
+cp incar.${i} INCAR || exit 1
+
+mpirun vasp_std
+if (( $? )); then
+    echo "Error while running VASP. Aborting." | tee -a track
+    exit 1
+fi
+
+echo "Zipping files at `date`." | tee -a track
+
+rm PCDAT XDATCAR CONTCAR CHG DOSCAR OSZICAR REPORT
+sed -n 's/^ *TITEL *=//p' POTCAR > POTCAR.spec
+mv PARCHG PARCHG_$i
+gzip PARCHG_$i
+zip Main_${i}.zip OUTCAR
+zip Main_${i}.zip POSCAR INCAR KPOINTS
+zip -mT Main_${i}.zip POTCAR.spec
+zip -mT Data_${i}.zip EIGENVAL IBZKPT OUTCAR 
+zip --junk-paths Main_${i}.zip $0
+mv vasprun.xml vasprun_${i}.xml
+gzip -f vasprun_${i}.xml
+
+done
+
+echo "Finished execution at `date`." | tee -a track
+
+exit 0

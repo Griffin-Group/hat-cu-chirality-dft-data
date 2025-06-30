@@ -1,0 +1,3 @@
+PARCHG_1_raw had a `******` float overflow at one datapoint. An artefact of VASP's output.
+I replaced that one datapoint with an arbitrary large-ish number, such that pymatgen could read it.
+The readable file is PARCHG_1.

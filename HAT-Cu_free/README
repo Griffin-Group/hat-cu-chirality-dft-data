@@ -1,0 +1,5 @@
+Achiral free-standing HAT-Cu calculation.
+
+Two relaxations with increasing KPOINTS (1.relax, 2.relax2) are followed by an SCF calculation (3.chg), which is followed by non-self-consistent bandstructure (3b.bands), DOS (3c.dos), and band-projected charge density (3d.parchg) calculations.
+
+The energy windows convered by the PARCHG calculations are specified in the respective INCAR files, under EINT, relative to the Fermi energy in eV.
