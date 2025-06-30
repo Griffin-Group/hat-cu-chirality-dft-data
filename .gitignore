@@ -8,3 +8,4 @@ __pycache__/
 .DS_Store
 HAT-Cu-AgSlab*/*.dos/vasprun.xml.gz
 HAT-Cu-AgSlab*/*.bands/vasprun.xml.gz
+hat-cu-chirality-dft-data-large-files.tar
