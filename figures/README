@@ -60,6 +60,7 @@ GitHub/Zenodo. These produce okay-quality STM plots. However, the real figures
 were created using the original full-quality PARCHGs, which are available on
 reasonable request from the theory authors (Bernard Field, Sinead Griffin).
 
+`PARCHG*.png`'s were plotted using VESTA.
 Isosurfaces in the `PARCHG*.png` are at 0.005 e/A^3, except for band 4 which is at 0.0005 e/A^3.
 
 ### Energy ranges integrated over in DFT.
