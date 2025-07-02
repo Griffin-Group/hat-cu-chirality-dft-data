@@ -103,8 +103,8 @@ It can be recreated by any appropriate tool for manipulating `DOSCAR` or
 
 ## Licenses and citation
 
-Code files (`.py`, `.sh,`, `.awk`, `.gnuplot`) in the root and `figures/`
-directories are provided under the MIT license unless otherwise specified.
+Code files (`.py`, `.sh,`, `.awk`, `.gnuplot`, `.sbatch`, `.gadi`, `.pbs`) are
+provided under the MIT license, except for `figures/stm.py`.
 Unless otherwise specified, these files are Copyright Bernard Field 2025.
 (`downsample_parchg.py`, `figures/sumo_band_projections.py`, and `figures/stm.py`
 contain code from third-parties, so contain additional copyright.)
