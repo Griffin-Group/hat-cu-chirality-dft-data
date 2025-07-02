@@ -8,9 +8,9 @@ Namely, we investigated hexaazatriphenylene coordinated to Cu atoms (HAT-Cu).
 The primary goal of the DFT calculations were to obtain band structures and
 simulated STM images.
 
-Paper authors:
-Julian Ceddia, Bernard Field, Jack Hellerstedt, Sebastian O. Fürer,
-Benjamin Lowe, Udo Bach, Sinéad Griffin, Agustin Schiffrin
+Citation:
+
+    Julian Ceddia, Bernard Field, Jack Hellerstedt, Sebastian O. Fürer, Benjamin Lowe, Udo Bach, Sinéad Griffin, & Agustin Schiffrin, "Tuning Interface Electronic Properties via Chiral 2D Metal-Organic Frameworks", under review (2025)
 
 For questions regarding this dataset specifically, contact Bernard Field or Sinéad Griffin.
 
@@ -29,10 +29,7 @@ Convergence parameters were largely estimated from Bernard's prior work
 on dicyanoanthracene-copper, a similar system.
 [[1](https://doi.org/10.1038/s41524-022-00918-0),[2](https://doi.org/10.1002/adfm.202106474)]
 
-Manual dos splitting (`dos_split`, `dos_sum_np`, etc.) performed using VTST Tools by the Henkelman Group (https://theory.cm.utexas.edu/vtsttools/).
-
-Plotting of DOS and band structures performed using sumo,
-Alex M. Ganose, Adam J. Jackson, David O. Scanlon. sumo: Command-line tools for plotting and analysis of periodic ab initio calculations. Journal of Open Source Software, 2018 3 (28), 717, doi:10.21105/joss.00717.
+Plotting of DOS and band structures performed using sumo.
 
 ## Structures
 
@@ -123,12 +120,57 @@ The remaining files (calculation data, figures) are provided under
 
 If you use the code or data, please cite the paper associated with this repository:
 
-    J. Ceddia et. al, "Tuning Interface Electronic Properties via Chiral 2D Metal-Organic Frameworks", in preparation (2025)
+    J. Ceddia et. al, "Tuning Interface Electronic Properties via Chiral 2D Metal-Organic Frameworks", under review (2025)
 
 ## Acknowledgements
 
-Computational resources provided by National Computing Institute (NCI) Australia and by National Energy Research Scientific Computing Center (NERSC), USA.
+This work at the Molecular Foundry was supported by the Office of Science,
+Office of Basic Energy Sciences, of the U.S. Department of Energy under
+Contract No. DE-AC02-05CH11231.
 
-Molecular Foundry User Proposal.
+This research was undertaken with the assistance of resources from the National
+Computational Infrastructure (NCI Australia), an NCRIS enabled capability
+supported by the Australian Government.
+
+This research used resources of the National Energy Research Scientific
+Computing Center, which is supported by the Office of Science of the U.S.
+Department of Energy under Contract No. DE-AC02-05CH11231.
 
 ## Bibliography
+
+Alex M. Ganose, Adam J. Jackson, David O. Scanlon.
+sumo: Command-line tools for plotting and analysis of periodic ab initio calculations.
+_Journal of Open Source Software_, 2018 **3** (28), 717.
+[doi:10.21105/joss.00717](https://doi.org/10.21105/joss.00717).
+
+Ask Hjorth Larsen, Jens Jørgen Mortensen, Jakob Blomqvist,
+Ivano E. Castelli, Rune Christensen, Marcin Dułak, Jesper Friis,
+Michael N. Groves, Bjørk Hammer, Cory Hargus, Eric D. Hermes,
+Paul C. Jennings, Peter Bjerre Jensen, James Kermode, John R. Kitchin,
+Esben Leonhard Kolsbjerg, Joseph Kubal, Kristen Kaasbjerg,
+Steen Lysgaard, Jón Bergmann Maronsson, Tristan Maxson, Thomas Olsen,
+Lars Pastewka, Andrew Peterson, Carsten Rostgaard, Jakob Schiøtz,
+Ole Schütt, Mikkel Strange, Kristian S. Thygesen, Tejs Vegge,
+Lasse Vilhelmsen, Michael Walter, Zhenhua Zeng, & Karsten Wedel Jacobsen.
+The Atomic Simulation Environment—A Python library for working with atoms,
+_Journal of Physics: Condensed Matter_, 2017 **29**, 273002.
+[doi:10.1088/1361-648X/aa680e](https://doi.org/10.1088/1361-648X/aa680e).
+
+Bernard Field, Agustin Schiffrin, & Nikhil V. Medhekar.
+Correlation-induced magnetism in substrate-supported 2D metal-organic frameworks,
+_npj Computational Materials_, 2022 **8**, 227.
+[doi:10.1038/s41524-022-00918-0](https://doi.org/10.1038/s41524-022-00918-0).
+
+Dhaneesh Kumar, Jack Hellerstedt, Bernard Field, Benjamin Lowe, Yufeng Yin,
+Nikhil V. Medhekar, & Agustin Schiffrin.
+Manifestation of Strongly Correlated Electrons in a 2D Kagome Metal–Organic Framework.
+_Advanced Functional Materials_, 2021 **31**, 2106474.
+[doi:10.1002/adfm.202106474](https://doi.org/10.1002/adfm.202106474)
+
+Shyue Ping Ong, William Davidson Richards, Anubhav Jain, Geoffroy Hautier,
+Michael Kocher, Shreyas Cholia, Dan Gunter, Vincent Chevrier, Kristin A.
+Persson, & Gerbrand Ceder.
+Python Materials Genomics (pymatgen) : A Robust,
+Open-Source Python Library for Materials Analysis.
+*Computational Materials Science*, 2013 **68**, 314–319.
+[doi:10.1016/j.commatsci.2012.10.028](https://doi.org/10.1016/j.commatsci.2012.10.028)
