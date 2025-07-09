@@ -2,7 +2,7 @@
 """
 Plot simulated STM plots.
 
-Copyright Bernard Field 2025
+Copyright 2025 Bernard Field
 Distributed under the MIT license.
 """
 

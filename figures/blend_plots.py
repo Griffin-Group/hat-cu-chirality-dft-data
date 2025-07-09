@@ -10,7 +10,8 @@ the results are commutative.
 
 See test_plots.py for an example of usage, because it's somewhat involved.
 
-Copyright Bernard Field, 2025
+Copyright 2025 Bernard Field
+MIT License
 """
 
 import matplotlib.pyplot as plt

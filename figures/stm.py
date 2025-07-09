@@ -8,9 +8,26 @@ https://wiki.fysik.dtu.dk/ase/ase/dft/stm.html
 Adapted to accept CHGCAR/PARCHG format instead.
 (This makes slightly less features than the original format which had full wavefunction data.)
 
-LGPL licence.
 
-Modifications by Bernard Field, 2025.
+# LICENSE
+
+Copyright 2025 ASE developers
+Copyright 2025 Bernard Field
+
+
+stm.py is free software: you can redistribute it and/or modify it under the
+terms of the GNU Lesser General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+stm.py is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+details.
+
+You should have received a copy of the GNU Lesser General Public License along
+with stm.py. If not, see <https://www.gnu.org/licenses/>.
+
 """
 
 import numpy as np

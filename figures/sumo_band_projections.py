@@ -23,10 +23,10 @@ spin-polarised edge states in SOC calculations, for example.
 
 
 Original functions taken from sumo (https://github.com/SMTG-Bham/sumo)
-Copyright Alex Ganose, 2017
+Copyright 2017 Alex Ganose
 
 Modifications by Bernard Field
-Copyright Bernard Field, 2025
+Copyright 2025 Bernard Field
 MIT License
 """
 

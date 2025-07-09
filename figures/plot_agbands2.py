@@ -2,7 +2,8 @@
 """
 Plot HAT-Cu-AgSlab5 band structure with multiplicative blending of fatbands.
 
-Copyright Bernard Field, 2025
+Copyright 2025 Bernard Field
+MIT License
 """
 
 import argparse

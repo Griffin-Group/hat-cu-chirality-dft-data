@@ -10,8 +10,11 @@ Makes use of code snippets adapted from
 - pymatgen (https://pymatgen.org)
 - fortranformat (https://pypi.org/project/fortranformat/)
 
-Copyright Bernard Field 2025
-Released under the MIT License
+Copyright 2025 Bernard Field
+Copyright 2012 Materials Project (part of Parchg.to_file)
+Copyright 2011 Brendan Arnold (part of format_float)
+
+MIT License
 """
 
 import argparse

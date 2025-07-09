@@ -104,17 +104,19 @@ It can be recreated by any appropriate tool for manipulating `DOSCAR` or
 ## Licenses and citation
 
 Code files (`.py`, `.sh,`, `.awk`, `.gnuplot`, `.sbatch`, `.gadi`, `.pbs`) are
-provided under the MIT license, except for `figures/stm.py`.
-Unless otherwise specified, these files are Copyright Bernard Field 2025.
+licensed under the [MIT license](https://opensource.org/license/mit), except
+for `figures/stm.py`.
+Unless otherwise specified, these files are Copyright 2025 Bernard Field.
 (`downsample_parchg.py`, `figures/sumo_band_projections.py`, and `figures/stm.py`
 contain code from third-parties, so contain additional copyright.)
 
-`figures/stm.py` is provided the
+`figures/stm.py` is licensed under
 [GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0.html)
 (LGPL), because it is directly derived from the
 [Atomic Simulation Environment](https://wiki.fysik.dtu.dk/ase/index.html) (ASE).
 
-The remaining files (calculation data, figures) are provided under
+The remaining files (calculation data, figures) are copyright 2025 by Bernard
+Field, licensed under
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 (CC-BY 4.0).
 
