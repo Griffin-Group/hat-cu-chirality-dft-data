@@ -8,7 +8,7 @@ Namely, we investigated hexaazatriphenylene coordinated to Cu atoms (HAT-Cu).
 The primary goal of the DFT calculations were to obtain band structures and
 simulated STM images.
 
-Citation:
+Citation (published paper pending):
 
     Julian Ceddia, Bernard Field, Jack Hellerstedt, Sebastian O. Fürer, Benjamin Lowe, Udo Bach, Sinéad Griffin, & Agustin Schiffrin, "Tuning Interface Electronic Properties via Chiral 2D Metal-Organic Frameworks", under review (2025)
 
@@ -29,7 +29,7 @@ Convergence parameters were largely estimated from Bernard's prior work
 on dicyanoanthracene-copper, a similar system.
 [[1](https://doi.org/10.1038/s41524-022-00918-0),[2](https://doi.org/10.1002/adfm.202106474)]
 
-Plotting of DOS and band structures performed using sumo.
+Plotting of DOS and band structures were performed using sumo.
 
 ## Structures
 
@@ -75,7 +75,7 @@ down-sampled.
 The original larger files can be obtained on request.
 They are stored on NERSC's HPSS system as
 `hat-cu-chirality-dft-data-large-files.tar` under the user `bfield`.
-This archive file, placed in the root directory of this repository, can be
+This archive file, when placed in the root directory of this repository, can be
 extracted to place all files in their appropriate directories.
 This archive contains:
 - CHGCAR's for the self-consistent field calculations.
@@ -141,7 +141,7 @@ Department of Energy under Contract No. DE-AC02-05CH11231.
 ## Bibliography
 
 Alex M. Ganose, Adam J. Jackson, David O. Scanlon.
-sumo: Command-line tools for plotting and analysis of periodic ab initio calculations.
+"sumo: Command-line tools for plotting and analysis of periodic ab initio calculations."
 _Journal of Open Source Software_, 2018 **3** (28), 717.
 [doi:10.21105/joss.00717](https://doi.org/10.21105/joss.00717).
 
@@ -154,25 +154,25 @@ Steen Lysgaard, Jón Bergmann Maronsson, Tristan Maxson, Thomas Olsen,
 Lars Pastewka, Andrew Peterson, Carsten Rostgaard, Jakob Schiøtz,
 Ole Schütt, Mikkel Strange, Kristian S. Thygesen, Tejs Vegge,
 Lasse Vilhelmsen, Michael Walter, Zhenhua Zeng, & Karsten Wedel Jacobsen.
-The Atomic Simulation Environment—A Python library for working with atoms,
+"The Atomic Simulation Environment—A Python library for working with atoms."
 _Journal of Physics: Condensed Matter_, 2017 **29**, 273002.
 [doi:10.1088/1361-648X/aa680e](https://doi.org/10.1088/1361-648X/aa680e).
 
 Bernard Field, Agustin Schiffrin, & Nikhil V. Medhekar.
-Correlation-induced magnetism in substrate-supported 2D metal-organic frameworks,
+"Correlation-induced magnetism in substrate-supported 2D metal-organic frameworks."
 _npj Computational Materials_, 2022 **8**, 227.
 [doi:10.1038/s41524-022-00918-0](https://doi.org/10.1038/s41524-022-00918-0).
 
 Dhaneesh Kumar, Jack Hellerstedt, Bernard Field, Benjamin Lowe, Yufeng Yin,
 Nikhil V. Medhekar, & Agustin Schiffrin.
-Manifestation of Strongly Correlated Electrons in a 2D Kagome Metal–Organic Framework.
+"Manifestation of Strongly Correlated Electrons in a 2D Kagome Metal–Organic Framework."
 _Advanced Functional Materials_, 2021 **31**, 2106474.
 [doi:10.1002/adfm.202106474](https://doi.org/10.1002/adfm.202106474)
 
 Shyue Ping Ong, William Davidson Richards, Anubhav Jain, Geoffroy Hautier,
 Michael Kocher, Shreyas Cholia, Dan Gunter, Vincent Chevrier, Kristin A.
 Persson, & Gerbrand Ceder.
-Python Materials Genomics (pymatgen) : A Robust,
-Open-Source Python Library for Materials Analysis.
+"Python Materials Genomics (pymatgen) : A Robust,
+Open-Source Python Library for Materials Analysis."
 *Computational Materials Science*, 2013 **68**, 314–319.
 [doi:10.1016/j.commatsci.2012.10.028](https://doi.org/10.1016/j.commatsci.2012.10.028)
