@@ -1,5 +1,7 @@
 # DFT data for "Tuning Interface Electronic Properties via Chiral 2D Metal-Organic Frameworks"
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16808990.svg)](https://doi.org/10.5281/zenodo.16808990)
+
 This is a repository containing the density functional theory (DFT) data for
 our project on investigating the scanning tunnelling microscopy and spectroscopy
 (STM and STS) signatures of a 2D metal-organic framework (MOF) with chiral
@@ -26,8 +28,8 @@ Vienna Ab initio Simulation Package (VASP).
 Most calculations used VASP version 5.4.4, except for the 5-layer Ag slab
 calculations which used version 6.4.3.
 Convergence parameters were largely estimated from Bernard's prior work
-on dicyanoanthracene-copper, a similar system.
-[[1](https://doi.org/10.1038/s41524-022-00918-0),[2](https://doi.org/10.1002/adfm.202106474)]
+on dicyanoanthracene-copper, a similar system
+[[Kumar _et al._, 2021](https://doi.org/10.1038/s41524-022-00918-0), [Field _et al._, 2022](https://doi.org/10.1002/adfm.202106474)].
 
 Plotting of DOS and band structures were performed using sumo.
 
@@ -72,9 +74,9 @@ To enable distribution of this repository, larger files have been archived
 separately, and large files essential for generating the figures have been
 down-sampled.
 
-The original larger files can be obtained on request.
-They are stored on NERSC's HPSS system as
-`hat-cu-chirality-dft-data-large-files.tar` under the user `bfield`.
+The original larger files are stored on [Zenodo](https://doi.org/10.5281/zenodo.16808990)
+as `hat-cu-chirality-dft-data-large-files.tar`.
+(For group members: it is also on NERSC's HPSS system under the user `bfield`.)
 This archive file, when placed in the root directory of this repository, can be
 extracted to place all files in their appropriate directories.
 This archive contains:
